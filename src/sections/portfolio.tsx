@@ -1,5 +1,3 @@
-import { MoveRight } from "lucide-react";
-
 export default function Portfolio() {
   return (
     <section className="pt-32" id="portfolio">
@@ -8,7 +6,7 @@ export default function Portfolio() {
           <p className="font-Barlow text-secondary-color text-xl font-semibold">
             Portfolio
           </p>
-          <h2 className="font-Barlow py-5 text-4xl font-semibold">
+          <h2 className="font-Barlow py-5 text-4xl font-semibold lg:text-4xl">
             My Amazing Works
           </h2>
           <p className="text-text-color">
@@ -17,48 +15,52 @@ export default function Portfolio() {
           </p>
         </div>
         <div className="mt-10 flex flex-col gap-7">
-          <div className="w-full rounded-lg bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-1.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center">
-            <p className="font-Barlow text-secondary-color font-semibold capitalize">
+          <div className="cursor-pointer rounded-3xl bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-1.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center xl:h-96">
+            <p className="font-Barlow text-secondary-color font-semibold capitalize lg:text-xl">
               youtube
             </p>
-            <h2 className="font-Barlow text-2xl font-semibold">
+            <h2 className="font-Barlow text-2xl font-semibold lg:py-1 lg:text-4xl">
               web application for desiverse
             </h2>
-            <p className="font-Barlow flex gap-2 py-4 font-semibold">
-              view project <MoveRight className="text-secondary-color w-1/12" />
+            <p className="font-Barlow cursor-pointer py-4 font-semibold uppercase lg:text-lg">
+              view project{" "}
+              <span className="text-secondary-color text-3xl">&rarr;</span>
             </p>
           </div>
-          <div className="rounded-lg bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-2.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center">
-            <p className="font-Barlow text-secondary-color font-semibold capitalize">
+          <div className="cursor-pointer rounded-3xl bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-2.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center xl:h-96">
+            <p className="font-Barlow text-secondary-color font-semibold capitalize lg:text-xl">
               vimeo
             </p>
-            <h2 className="font-Barlow text-2xl font-semibold">
+            <h2 className="font-Barlow text-2xl font-semibold lg:py-1 lg:text-4xl">
               web application for desiverse
             </h2>
-            <p className="font-Barlow flex gap-2 py-4 font-semibold">
-              view project <MoveRight className="text-secondary-color w-1/12" />
+            <p className="font-Barlow cursor-pointer py-4 font-semibold uppercase lg:text-lg">
+              view project{" "}
+              <span className="text-secondary-color text-3xl">&rarr;</span>
             </p>
           </div>
-          <div className="rounded-lg bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-3.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center">
-            <p className="font-Barlow text-secondary-color font-semibold capitalize">
+          <div className="cursor-pointer rounded-3xl bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-3.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center xl:h-96">
+            <p className="font-Barlow text-secondary-color font-semibold capitalize lg:text-xl">
               sound cloud
             </p>
-            <h2 className="font-Barlow text-2xl font-semibold">
+            <h2 className="font-Barlow text-2xl font-semibold lg:py-1 lg:text-4xl">
               web application for desiverse
             </h2>
-            <p className="font-Barlow flex gap-2 py-4 font-semibold">
-              view project <MoveRight className="text-secondary-color w-1/12" />
+            <p className="font-Barlow cursor-pointer py-4 font-semibold uppercase lg:text-lg">
+              view project{" "}
+              <span className="text-secondary-color text-3xl">&rarr;</span>
             </p>
           </div>
-          <div className="rounded-lg bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-4.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center">
-            <p className="font-Barlow text-secondary-color font-semibold capitalize">
+          <div className="cursor-pointer rounded-3xl bg-[url('https://codewithsadee.github.io/portfolio/assets/images/portfolio-4.jpg')] bg-cover p-10 sm:flex sm:h-80 sm:flex-col sm:justify-center xl:h-96">
+            <p className="font-Barlow text-secondary-color font-semibold capitalize lg:text-xl">
               details
             </p>
-            <h2 className="font-Barlow text-2xl font-semibold">
+            <h2 className="font-Barlow text-2xl font-semibold lg:py-1 lg:text-4xl">
               web application for desiverse
             </h2>
-            <p className="font-Barlow flex gap-2 py-4 font-semibold">
-              view project <MoveRight className="text-secondary-color w-1/12" />
+            <p className="font-Barlow cursor-pointer py-4 font-semibold uppercase lg:text-lg">
+              view project{" "}
+              <span className="text-secondary-color text-3xl">&rarr;</span>
             </p>
           </div>
         </div>

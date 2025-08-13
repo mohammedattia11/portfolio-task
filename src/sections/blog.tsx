@@ -1,6 +1,6 @@
 export default function Blog() {
   return (
-    <section className="pt-32" id="blog">
+    <section className="pt-32 lg:pt-36" id="blog">
       {/* container */}
       <div className="flex flex-col px-2">
         {/* upper content container */}
@@ -17,14 +17,16 @@ export default function Blog() {
           </p>
         </div>
         {/* lower content container */}
-        <div className="flex flex-col gap-8 md:flex-row md:gap-0 flex-wrap">
+        <div className="flex flex-col flex-wrap gap-8 md:flex-row md:gap-0">
           {/* card items */}
-          <div className="w-full md:w-1/2 px-2">
-            <img
-              src="https://codewithsadee.github.io/portfolio/assets/images/blog-1.jpg"
-              alt=""
-              className="rounded-lg"
-            />
+          <div className="w-full overflow-hidden px-2 md:w-1/2 lg:w-[33%]">
+            <div className="max-w-sm cursor-pointer overflow-hidden rounded-xl shadow-lg">
+              <img
+                src="https://codewithsadee.github.io/portfolio/assets/images/blog-1.jpg"
+                alt=""
+                className="h-auto w-full rounded-lg transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
             <p className="font-Barlow text-secondary-color py-2 text-lg font-semibold">
               web development
             </p>
@@ -32,12 +34,14 @@ export default function Blog() {
               Jim Morisson Says when the musics over turn off the light
             </p>
           </div>
-          <div className="w-full md:w-1/2 px-2">
-            <img
-              src="https://codewithsadee.github.io/portfolio/assets/images/blog-2.jpg"
-              alt=""
-              className="rounded-lg"
-            />
+          <div className="w-full px-2 md:w-1/2 lg:w-[33%]">
+            <div className="max-w-sm cursor-pointer overflow-hidden rounded-xl shadow-lg">
+              <img
+                src="https://codewithsadee.github.io/portfolio/assets/images/blog-2.jpg"
+                alt=""
+                className="h-auto w-full rounded-lg transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
             <p className="font-Barlow text-secondary-color py-2 text-lg font-semibold">
               web development
             </p>
@@ -45,12 +49,14 @@ export default function Blog() {
               Jim Morisson Says when the musics over turn off the light
             </p>
           </div>
-          <div className="w-full md:w-1/2 px-2">
-            <img
-              src="https://codewithsadee.github.io/portfolio/assets/images/blog-3.jpg"
-              alt=""
-              className="rounded-lg"
-            />
+          <div className="w-full px-2 md:w-1/2 lg:w-[33%]">
+            <div className="max-w-sm cursor-pointer overflow-hidden rounded-xl shadow-lg">
+              <img
+                src="https://codewithsadee.github.io/portfolio/assets/images/blog-3.jpg"
+                alt=""
+                className="h-auto w-full rounded-lg transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
             <p className="font-Barlow text-secondary-color py-2 text-lg font-semibold">
               web development
             </p>
@@ -63,3 +69,5 @@ export default function Blog() {
     </section>
   );
 }
+// https://codewithsadee.github.io/portfolio/assets/images/blog-2.jpg
+//https://codewithsadee.github.io/portfolio/assets/images/blog-3.jpg

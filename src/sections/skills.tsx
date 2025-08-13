@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
-    <section className="pt-32" id="skills">
-      <div className="px-2 flex flex-col">
+    <section className="pt-32 lg:pt-36" id="skills">
+      <div className="flex flex-col px-2">
         <div className="text-center">
           <p className="font-Barlow text-secondary-color text-xl font-semibold">
             My Skills
@@ -15,64 +15,64 @@ export default function Skills() {
           </p>
         </div>
         {/* progress section dev */}
-        <div className="flex flex-col md:flex-row flex-wrap md:py-5"> 
+        <div className="flex flex-col flex-wrap md:flex-row md:py-5">
           {/* progress div */}
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full px-2 md:w-1/2">
             <div className="flex justify-between py-3">
-              <p className="font-Barlow font-semibold text-lg">CSS</p>
-              <p className="font-Barlow font-semibold text-lg">25%</p>
+              <p className="font-Barlow text-lg font-semibold">CSS</p>
+              <p className="font-Barlow text-lg font-semibold">25%</p>
             </div>
             <div className="w-12/12 rounded-full bg-stone-100">
-              <div className="bg-secondary-color h-full rounded-full w-[25%] p-1"></div>
+              <div className="bg-secondary-color h-full w-[25%] rounded-full p-1"></div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full px-2 md:w-1/2">
             <div className="flex justify-between py-3">
-              <p className="font-Barlow font-semibold text-lg">React</p>
-              <p className="font-Barlow font-semibold text-lg">75%</p>
+              <p className="font-Barlow text-lg font-semibold">React</p>
+              <p className="font-Barlow text-lg font-semibold">75%</p>
             </div>
             <div className="w-12/12 rounded-full bg-stone-100">
-              <div className="bg-secondary-color h-full rounded-full w-[75%] p-1"></div>
+              <div className="bg-secondary-color h-full w-[75%] rounded-full p-1"></div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full px-2 md:w-1/2">
             <div className="flex justify-between py-3">
-              <p className="font-Barlow font-semibold text-lg">MongoDB</p>
-              <p className="font-Barlow font-semibold text-lg">90%</p>
+              <p className="font-Barlow text-lg font-semibold">MongoDB</p>
+              <p className="font-Barlow text-lg font-semibold">90%</p>
             </div>
             <div className="w-12/12 rounded-full bg-stone-100">
-              <div className="bg-secondary-color h-full rounded-full w-[90%] p-1"></div>
+              <div className="bg-secondary-color h-full w-[90%] rounded-full p-1"></div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full px-2 md:w-1/2">
             <div className="flex justify-between py-3">
-              <p className="font-Barlow font-semibold text-lg">Python</p>
-              <p className="font-Barlow font-semibold text-lg">70%</p>
+              <p className="font-Barlow text-lg font-semibold">Python</p>
+              <p className="font-Barlow text-lg font-semibold">70%</p>
             </div>
             <div className="w-12/12 rounded-full bg-stone-100">
-              <div className="bg-secondary-color h-full rounded-full w-[70%] p-1"></div>
+              <div className="bg-secondary-color h-full w-[70%] rounded-full p-1"></div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full px-2 md:w-1/2">
             <div className="flex justify-between py-3">
-              <p className="font-Barlow font-semibold text-lg">PHP</p>
-              <p className="font-Barlow font-semibold text-lg">80%</p>
+              <p className="font-Barlow text-lg font-semibold">PHP</p>
+              <p className="font-Barlow text-lg font-semibold">80%</p>
             </div>
             <div className="w-12/12 rounded-full bg-stone-100">
-              <div className="bg-secondary-color h-full rounded-full w-[80%] p-1"></div>
+              <div className="bg-secondary-color h-full w-[80%] rounded-full p-1"></div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full px-2 md:w-1/2">
             <div className="flex justify-between py-3">
-              <p className="font-Barlow font-semibold text-lg">JavaScript</p>
-              <p className="font-Barlow font-semibold text-lg">75%</p>
+              <p className="font-Barlow text-lg font-semibold">JavaScript</p>
+              <p className="font-Barlow text-lg font-semibold">75%</p>
             </div>
             <div className="w-12/12 rounded-full bg-stone-100">
-              <div className="bg-secondary-color h-full rounded-full w-[75%] p-1"></div>
+              <div className="bg-secondary-color h-full w-[75%] rounded-full p-1"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

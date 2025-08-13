@@ -3,9 +3,9 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="pt-32" id="contact">
-      <div className="bg-form-color flex flex-col rounded-xl p-10">
-        <div>
+    <section className="pt-32 lg:pt-36" id="contact">
+      <div className="bg-form-color flex flex-col rounded-xl p-10 lg:flex-row lg:items-center lg:justify-between lg:gap-5 lg:py-30">
+        <div className="lg:w-7/12">
           <p className="font-Barlow text-secondary-color text-xl font-semibold">
             Don't be shy
           </p>
@@ -37,32 +37,38 @@ export default function Contact() {
             </Button>
           </form>
         </div>
-        <div className="py-10 flex flex-col gap-6">
-          <div className="flex flex-row items-center gap-3  text-sm">
-            <div className="bg-icon-color p-5 rounded-full">
+        <div className="flex flex-col gap-6 py-10">
+          <div className="flex flex-row items-center gap-3 text-sm">
+            <div className="bg-icon-color rounded-full p-5">
               <MapPin />
             </div>
             <div>
               <p className="font-Barlow text-xl font-semibold">Address</p>
-              <p className="text-lg font-light text-text-color">20, London, United Kingdom</p>
+              <p className="text-text-color text-lg font-light">
+                20, London, United Kingdom
+              </p>
             </div>
           </div>
-          <div className="flex flex-row items-center gap-3  text-sm">
-            <div className="bg-icon-color p-5 rounded-full">
+          <div className="flex flex-row items-center gap-3 text-sm">
+            <div className="bg-icon-color rounded-full p-5">
               <Mail />
             </div>
             <div>
               <p className="font-Barlow text-xl font-semibold">Email</p>
-              <a className="text-lg font-light text-text-color">hello@ethan.com</a>
+              <a className="text-text-color text-lg font-light">
+                hello@ethan.com
+              </a>
             </div>
           </div>
-          <div className="flex flex-row items-center gap-3  text-sm">
-            <div className="bg-icon-color p-5 rounded-full">
+          <div className="flex flex-row items-center gap-3 text-sm">
+            <div className="bg-icon-color rounded-full p-5">
               <Phone />
             </div>
             <div>
               <p className="font-Barlow text-xl font-semibold">Phone</p>
-              <p className="text-lg font-light text-text-color">+123 456 7890</p>
+              <p className="text-text-color text-lg font-light">
+                +123 456 7890
+              </p>
             </div>
           </div>
         </div>

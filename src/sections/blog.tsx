@@ -1,5 +1,5 @@
 export default function Blog() {
   return (
-    <div>blog</div>
+    <section id="blog">blog</section>
   )
 }

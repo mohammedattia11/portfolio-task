@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav
       className={clsx(
-        "flex sm:bg-main-color justify-between items-center py-3 px-8 md:px-32 text-stone-100 drop-shadow-md fixed w-full transition-all duration-300",
+        "flex bg-main-color z-10 justify-between items-center py-3 px-8 md:px-32 text-stone-100 drop-shadow-md fixed w-full transition-all duration-300",
         isScrolled ? "lg:bg-main-color" : "lg:bg-transparent"
       )}
     >
@@ -44,7 +44,7 @@ export default function Navbar() {
             <a href="#blog">Blog</a>
           </li>
         </ul>
-        <a href={myCv} download="Mohamed-atia-CV" className="ms-4">
+        <a href={myCv} download="Mohamed-atia-CV" className="hidden lg:flex ms-4">
           <Button size={"sm"} className="rounded-full">
           Download CV
         </Button>
@@ -61,35 +61,37 @@ export default function Navbar() {
           className="block lg:hidden cursor-pointer"
         />
       )}
-
+      {/* drop down menu */}
       <div
-        className={`absolute xl:hidden top-12 left-0 w-full bg-main-color flex flex-col items-start gap-3 font-semibold text-lg transition-all duration-300 p-4 ${
+        className={`absolute xl:hidden top-12 left-0 w-full bg-main-color p-4 ${
           isMenuOpen ? "opacity-100" : "opacity-0"
         }`}
       >
-        <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
-          <a href="#home">Home</a>
-        </li>
-        <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
-          <a href="#about">About</a>
-        </li>
-        <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
-          <a href="#skills">Skills</a>
-        </li>
-        <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
-          <a href="#contact">Contact</a>
-        </li>
-        <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
-          <a href="#blog">Blog</a>
-        </li>
-        <a href={myCv} download="Mohamed-atia-CV">
-          <Button size={"sm"} className="rounded-full">
-          Download CV
-        </Button>
-        </a>
+        <div className="flex flex-col items-start gap-3 font-semibold text-lg transition-all duration-300">
+          <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
+            <a  href="#home">Home</a>
+          </li>
+          <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
+            <a onClick={()=>setIsMenuOpen(false)} href="#about">About</a>
+          </li>
+          <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
+            <a onClick={()=>setIsMenuOpen(false)} href="#portfolio">Portfolio</a>
+          </li>
+          <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
+            <a onClick={()=>setIsMenuOpen(false)} href="#skills">Skills</a>
+          </li>
+          <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
+            <a onClick={()=>setIsMenuOpen(false)} href="#contact">Contact</a>
+          </li>
+          <li className="list-none text-center hover:text-secondary-color duration-300 transition-all cursor-pointer">
+            <a onClick={()=>setIsMenuOpen(false)} href="#blog">Blog</a>
+          </li>
+          <a href={myCv} download="Mohamed-atia-CV">
+            <Button size={"lg"} className="rounded-full">
+            Download CV
+          </Button>
+          </a>
+        </div>
         
       </div>
     </nav>

@@ -3,6 +3,8 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import myCv from "../../data/CV/Mohamed-Atia CV.pdf";
 import { Button } from "../ui/button";
+import NavList from "./NavList";
+import NavItem from "./NavItem";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,26 +26,7 @@ export default function Navbar() {
         atia{" "}
       </a>
       <div className="flex flex-row">
-        <ul className="hidden items-center gap-12 text-base font-semibold lg:flex">
-          <li className="hover:text-secondary-color p-1 transition-all duration-300">
-            <a href="#home">Home</a>
-          </li>
-          <li className="hover:text-secondary-color p-1 transition-all duration-300">
-            <a href="#about">About</a>
-          </li>
-          <li className="hover:text-secondary-color p-1 transition-all duration-300">
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li className="hover:text-secondary-color p-1 transition-all duration-300">
-            <a href="#skills">Skills</a>
-          </li>
-          <li className="hover:text-secondary-color p-1 transition-all duration-300">
-            <a href="#contact">Contact</a>
-          </li>
-          <li className="hover:text-secondary-color p-1 transition-all duration-300">
-            <a href="#blog">Blog</a>
-          </li>
-        </ul>
+        <NavList/>
         <a
           href={myCv}
           download="Mohamed-atia-CV"
@@ -72,34 +55,12 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col items-start gap-3 text-lg font-semibold transition-all duration-300">
-          <li className="hover:text-secondary-color cursor-pointer list-none text-center transition-all duration-300">
-            <a href="#home">Home</a>
-          </li>
-          <li className="hover:text-secondary-color cursor-pointer list-none text-center transition-all duration-300">
-            <a onClick={() => setIsMenuOpen(false)} href="#about">
-              About
-            </a>
-          </li>
-          <li className="hover:text-secondary-color cursor-pointer list-none text-center transition-all duration-300">
-            <a onClick={() => setIsMenuOpen(false)} href="#portfolio">
-              Portfolio
-            </a>
-          </li>
-          <li className="hover:text-secondary-color cursor-pointer list-none text-center transition-all duration-300">
-            <a onClick={() => setIsMenuOpen(false)} href="#skills">
-              Skills
-            </a>
-          </li>
-          <li className="hover:text-secondary-color cursor-pointer list-none text-center transition-all duration-300">
-            <a onClick={() => setIsMenuOpen(false)} href="#contact">
-              Contact
-            </a>
-          </li>
-          <li className="hover:text-secondary-color cursor-pointer list-none text-center transition-all duration-300">
-            <a onClick={() => setIsMenuOpen(false)} href="#blog">
-              Blog
-            </a>
-          </li>
+          <NavItem item="home" onClick={() => setIsMenuOpen(false)}/>
+          <NavItem item="about" onClick={() => setIsMenuOpen(false)}/>
+          <NavItem item="portfolio" onClick={() => setIsMenuOpen(false)}/>
+          <NavItem item="skills" onClick={() => setIsMenuOpen(false)}/>
+          <NavItem item="contact" onClick={() => setIsMenuOpen(false)}/>
+          <NavItem item="blog" onClick={() => setIsMenuOpen(false)}/>
           <a href={myCv} download="Mohamed-atia-CV">
             <Button size={"lg"} className="rounded-full">
               Download CV

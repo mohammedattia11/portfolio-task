@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import Section from "@/components/ui/Section";
 
 export default function About() {
   return (
-    <section className="pt-32 lg:pt-32" id="about">
+    <Section id="about">
       <div className="flex w-full flex-col gap-7 px-2 lg:flex-row lg:items-center">
         <div className="relative lg:w-[40%] xl:px-6">
           <img
@@ -38,6 +39,6 @@ export default function About() {
           </Button>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

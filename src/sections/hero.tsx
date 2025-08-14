@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
-    <section className="flex overflow-hidden min-h-screen w-[100%] flex-col p-4 items-center justify-center bg-[url('https://codewithsadee.github.io/portfolio/assets/images/hero-bg.jpg')] bg-cover text-stone-100">
+    <section id="home" className="flex overflow-hidden min-h-screen w-[100%] flex-col p-4 items-center justify-center bg-[url('https://codewithsadee.github.io/portfolio/assets/images/hero-bg.jpg')] bg-cover text-stone-100">
       <div className="flex mt-20 flex-col items-center justify-center gap-10 text-center lg:flex-row-reverse lg:px-4 lg:text-left xl:px-8">
         <div className="relative w-4/12 lg:w-6/12 xl:w-4/12">
           <img
